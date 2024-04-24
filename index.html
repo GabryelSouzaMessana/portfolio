@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <!-- Adicionando a biblioteca jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Adicionando o arquivo CSS do fullpage.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
+    <style>
+        /* Estilos personalizados */
+        .section {
+            text-align: center;
+            padding: 20px;
+        }
+        .slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .slide-content {
+            max-width: 800px;
+            margin: auto;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        section {
+            max-width: 800px;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #00bfa6;
+        }
+        h2 {
+            font-size: 24px;
+            margin-top: 30px;
+            color: #00bfa6;
+        }
+        p {
+            font-size: 18px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .image-container img {
+            max-width: 150px;
+            border-radius: 50%;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Conteúdo do fullpage.js -->
+<div id="fullpage">
+    <div class="section">
+        <div class="slide" id="section1">
+            <div class="slide-content">
+                <section>
+                    <h1>Gabryel de Souza Messana</h1>
+                    <div class="image-container">
+                        <img src="gym.png" style="border-radius: 0%">
+                            <img src="eu.png" style="border-radius: 0%">
+                            <img src="books.png" style="border-radius: 0%">
+                    </div>
+                    <h2>Quem sou eu?</h2>
+                    <p>Sou Gabryel de Souza Messana, tenho 18 anos, nascido em taubaté. Gosto da área de tecnologia por conta dos jogos virtuais, por conta disso entrei para essa área.
+                    
+                    <h2>Interesses e Hobbies</h2>
+                    <p>Econômia <br> Leitura <br> Academia <br> Games
+    
+                    </p>
+                 </section>
+            </div>
+        </div>
+        <div class="section">
+            <div class="slide" id="section2">
+                <div class="slide-content">
+                    <section>
+                        <h1>Gabryel de Souza Messana</h1>
+                        <div class="image-container">
+                            <img src="c.png" style="max-width: 80px; border-radius: 0%">
+                            <img src="js.png" style="max-width: 80px; border-radius: 0%">
+                            <img src="python.png" style="max-width: 80px; border-radius: 0%">
+                        </div>
+                        <h2>Parte Profissional</h2>
+                        <p>Como profissional, tenho dedicado alguns anos na área da programação estudando com mais afinco em relação à produção de jogos virtuais. Tenho habilidades em desenvolvimento, que incluem C++, JavaScript e Administração de Banco de Dados. E tenho facilidade no uso de outras linguagens, como python e HTML.
+                        <h2>Habilidades</h2>
+                        <p>C++ <br> JavaScript <br> Admin. MySQL <br> Python <br> HTML & CSS
+                        </section>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="slide" id="section3">
+                <div class="slide-content">
+                    <section>
+                        <h1>Gabryel de Souza Messana</h1>
+                        <div class="image-container">
+                            <img src="senai.png" style="max-width: 300px; border-radius: 0%">
+                        </div>
+                        <h2>Estudos / Formações</h2>
+                        <p>Técnico em Análise e Desenvolvimento de Sistemas - SENAI <br> Graduando Análise e Desenvolvimento de Sistemas - SENAI</p>
+                        <h2>Projetos</h2>
+                        <p>Aplicativo Nived - (Aplicação Flutterflow)
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="slide" id="section4">
+                <div class="slide-content">
+                    <h2>Dúvidas?</h2>
+                    <p>Em caso de dúvidas, fique a vontade para perguntar algo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Adicionando o arquivo JavaScript do fullpage.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+<script>
+    // Inicializando o fullpage.js
+    new fullpage('#fullpage', {
+        // Opções
+        autoScrolling: true,
+        fitToSection: true
+    });
+</script>
+
+</body>
+</html>
